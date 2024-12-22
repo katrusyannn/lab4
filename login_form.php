@@ -1,8 +1,7 @@
 <?php
-// Вказуємо абсолютний шлях до файлу з даними для логіну та паролю
+// Вказуємо шлях до файлу з даними для логіну та паролю
 $credentials_file = '/var/www/html/credentials.txt';
 
-// Перевірка, чи файл існує
 if (file_exists($credentials_file)) {
     // Читання даних з файлу
     $correct_credentials = file_get_contents($credentials_file);
